@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDoorManagmentSystem.MVC", "SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC.csproj", "{BF32ECAF-C071-4751-9FCF-43D0D1DE8CBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDoor.Data", "SmartDoor.Data\SmartDoor.Data.csproj", "{8D3E6B1B-C567-424C-9C67-7075AE0E087E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDoor.Models", "SmartDoor.Models\SmartDoor.Models.csproj", "{23E0F15E-4E61-45B2-8EDE-0BFE558B2AE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDoor.Services", "SmartDoor.Services\SmartDoor.Services.csproj", "{FD43AFAD-E8F9-4E5C-AF98-7E28CF6505F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{BF32ECAF-C071-4751-9FCF-43D0D1DE8CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF32ECAF-C071-4751-9FCF-43D0D1DE8CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF32ECAF-C071-4751-9FCF-43D0D1DE8CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3E6B1B-C567-424C-9C67-7075AE0E087E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3E6B1B-C567-424C-9C67-7075AE0E087E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3E6B1B-C567-424C-9C67-7075AE0E087E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3E6B1B-C567-424C-9C67-7075AE0E087E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E0F15E-4E61-45B2-8EDE-0BFE558B2AE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E0F15E-4E61-45B2-8EDE-0BFE558B2AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E0F15E-4E61-45B2-8EDE-0BFE558B2AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E0F15E-4E61-45B2-8EDE-0BFE558B2AE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD43AFAD-E8F9-4E5C-AF98-7E28CF6505F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD43AFAD-E8F9-4E5C-AF98-7E28CF6505F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD43AFAD-E8F9-4E5C-AF98-7E28CF6505F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD43AFAD-E8F9-4E5C-AF98-7E28CF6505F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
