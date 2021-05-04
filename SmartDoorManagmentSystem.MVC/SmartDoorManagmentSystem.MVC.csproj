@@ -174,7 +174,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -251,6 +250,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartDoor.Data\SmartDoor.Data.csproj">
+      <Project>{8d3e6b1b-c567-424c-9c67-7075ae0e087e}</Project>
+      <Name>SmartDoor.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartDoor.Models\SmartDoor.Models.csproj">
+      <Project>{23e0f15e-4e61-45b2-8ede-0bfe558b2ae1}</Project>
+      <Name>SmartDoor.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartDoor.Services\SmartDoor.Services.csproj">
+      <Project>{fd43afad-e8f9-4e5c-af98-7e28cf6505f4}</Project>
+      <Name>SmartDoor.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
