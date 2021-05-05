@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmartDoor.Models
 {
-    public class SmartDoorEdit
+    public class DoorEdit
     {
 
        

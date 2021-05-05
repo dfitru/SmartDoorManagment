@@ -15,7 +15,7 @@ namespace SmartDoor.Models
         public int FloorNumber { get; set; }
         public bool IsRoomInRoom { get; set; }
         public int? BuildingId { get; set; }
-        public virtual BuildingListItems BuildingLis { get; set; }
+        //public virtual BuildingListItems BuildingLis { get; set; }
         //public virtual ICollection<SmartKey> SmartKeys { get; set; }
 
     }

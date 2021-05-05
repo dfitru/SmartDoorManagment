@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmartDoor.Models
 {
-    public class KeyOwnerCreate
+    public class PersonCreate
     {
         [Required]
         [Display(Name = "First Name"),MinLength(2,ErrorMessage ="please enter at lest 2 characters"),MaxLength(100,ErrorMessage ="There are too many characters")]

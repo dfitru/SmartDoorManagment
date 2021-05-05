@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartDoor.Models
 {
-    public class SmartDoorItemList
+    public class DoorItemList
     {
         public int DoorId { get; set; }
         

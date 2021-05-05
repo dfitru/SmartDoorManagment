@@ -15,7 +15,7 @@ namespace SmartDoor.Models.Building
         public string BuildingName { get; set; }
        
         public string Address { get; set; }
-        public virtual SmartDoorItemList Doors { get; set; }
+        public virtual DoorItemList Doors { get; set; }
        // public virtual ICollection<Door> Doors { get; set; }
       //  public virtual ICollection<SmartKey> SmartKeys { get; set; }
     }

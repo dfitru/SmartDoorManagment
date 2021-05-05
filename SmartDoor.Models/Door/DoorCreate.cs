@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmartDoor.Models
 {
-    public class SmartDoorCreate
+    public class DoorCreate
     {
         [Required]
         [MinLength(4, ErrorMessage = "Please enter at least 2 characters.")]

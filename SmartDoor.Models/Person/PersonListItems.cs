@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmartDoor.Models
 {
-    public class KeyOwnerListItems
+    public class PersonListItem
     {
        
         public int KeyOwenerId { get; set; }

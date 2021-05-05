@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartDoor.Models
 {
-    public class KeyOwnerEdit
+    public class PersonEdit
     {
     }
 }
