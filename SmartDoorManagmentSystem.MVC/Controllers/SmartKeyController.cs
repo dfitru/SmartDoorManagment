@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SmartDoor.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,13 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
     {
         // GET: SmartKey
         public ActionResult Index()
+        {
+            var model =new  SmartKeyListItem[0];
+            return View(model);
+        }
+        // Add method here 
+        //Get
+        public ActionResult Create()
         {
             return View();
         }

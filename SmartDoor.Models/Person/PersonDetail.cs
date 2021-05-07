@@ -11,7 +11,7 @@ namespace SmartDoor.Models
     public class PersonDetail
     {
         [Key]
-        public int KeyOwenerId { get; set; }
+        public int PersonId { get; set; }
         [Required]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }

@@ -10,7 +10,7 @@ namespace SmartDoor.Models
     public class PersonListItem
     {
        
-        public int KeyOwenerId { get; set; }
+        public int PersonId { get; set; }
        
       
         public string FirstName { get; set; }

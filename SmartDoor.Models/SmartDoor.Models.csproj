@@ -64,6 +64,7 @@
     <Compile Include="Door\DoorItemList.cs" />
     <Compile Include="Person\PersonCreate.cs" />
     <Compile Include="Person\PersonDetail.cs" />
+    <Compile Include="Person\PersoneDelete.cs" />
     <Compile Include="Person\PersonEdit.cs" />
     <Compile Include="Person\PersonListItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +77,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SmartDoor.Data\SmartDoor.Data.csproj">
+      <Project>{8d3e6b1b-c567-424c-9c67-7075ae0e087e}</Project>
+      <Name>SmartDoor.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
