@@ -23,14 +23,14 @@ namespace SmartDoor.Data
         [Required]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyy-MM-dd}")]
-        public DateTime CreateDate { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public DateTimeOffset CreateDate { get; set; }
+        public DateTimeOffset ModifiedDate { get; set; }
 
-        //[ForeignKey(nameof(Person))]
-        //public int? PersonId { get; set; }
-        //public virtual Person Person { get; set; }
-        //[ForeignKey(nameof(SmartDoor))]
-        //public int? DoorId { get; set; }
-        //public virtual Door SmartDoor { get; set; }
+        [ForeignKey(nameof(Person))]
+        public int? PersonId { get; set; }
+        public virtual Person Person { get; set; }
+        [ForeignKey(nameof(SmartDoor))]
+        public int? DoorId { get; set; }
+        public virtual Door Door { get; set; }
     }
 }

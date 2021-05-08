@@ -47,7 +47,6 @@ namespace SmartDoor.Services
                             PersonId = e.PersonId,
                             FirstName = e.FirstName,
                             LastName = e.LastName
-
                         }
                         );
                 return query.ToArray();

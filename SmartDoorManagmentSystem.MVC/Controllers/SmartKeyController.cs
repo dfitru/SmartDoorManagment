@@ -9,6 +9,7 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
 {
     public class SmartKeyController : Controller
     {
+
         // GET: SmartKey
         public ActionResult Index()
         {

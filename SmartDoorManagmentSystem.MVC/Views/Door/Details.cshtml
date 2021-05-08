@@ -1,0 +1,68 @@
+﻿@model SmartDoor.Models.DoorDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DoorDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DoorId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoorId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FloorNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FloorNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsRoomInRoom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsRoomInRoom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Buildingss.BuildingId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Buildingss.BuildingId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Buildingss.BuildingName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Buildingss.BuildingName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Buildingss.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Buildingss.Address)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.DoorId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

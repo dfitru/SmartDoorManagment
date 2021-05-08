@@ -12,8 +12,8 @@ namespace SmartDoor.Models
         public int KeyId { get; set; }
         public string Name { get; set; }
         public bool KeyRecived { get; set; }
-        public DateTime CreateDate { get; set; }
-        public int? KeyOwnerId { get; set; }
+        public DateTimeOffset CreateDate { get; set; }
+        public int? PersoneId { get; set; }
         public int? DoorId { get; set; }
     }
 }

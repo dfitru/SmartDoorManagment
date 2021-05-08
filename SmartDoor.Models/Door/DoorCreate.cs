@@ -18,6 +18,10 @@ namespace SmartDoor.Models
         [Required]
         public bool IsRoomInRoom { get; set; }
         public int? BuildingId { get; set; }
+       // public string BuildingName { get; set; }
+        //public string Adress { get; set; }
+
+        //private virtual Building Building { get; set; }
 
     }
 }

@@ -19,7 +19,7 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
         // GET: Building
         public ActionResult Index()
         {
-            var model = new BuildingListItems[0];
+            var model = _buildingService.GetBuilding();
             return View(model);
         }
         // Add method here 

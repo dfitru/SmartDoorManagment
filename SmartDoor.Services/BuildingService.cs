@@ -46,8 +46,7 @@ namespace SmartDoor.Services
                             BuildingName = e.BuildingName,
                             Address = e.Address
 
-                        }
-                        );
+                        });
                 return query.ToArray();
             }
         }
