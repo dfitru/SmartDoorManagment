@@ -14,13 +14,12 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
     {
         
 
-        //private PersonService _person = new PersonService();
+        private PersonService _personService = new PersonService();
         // GET: Person
         public ActionResult Index()
         {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new PersonService(userId);
-            var model = service.GetPerson();
+            
+            var model = _personService.GetPerson();
             return View(model);
         }
         // Add method here 
@@ -34,8 +33,8 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
         public ActionResult Create(PersonCreate model)
         {
             if (!ModelState.IsValid) return View(model);
-            var service = CreatePersonService();
-            if (service.CreatePerson(model))
+           // var service = CreatePersonService();
+            if (_personService.CreatePerson(model))
             {
                 TempData["SaveResult"] = "Your note was created.";
                 return RedirectToAction("Index");
@@ -47,15 +46,15 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
         //Get Details
         public ActionResult Details(int id)
         {
-            var svc = CreatePersonService();
-            var model = svc.GetPersonById(id);
+            //var svc = CreatePersonService();
+            var model = _personService.GetPersonById(id);
             return View(model);
         }
 
         public ActionResult Edit(int id)
         {
-            var service = CreatePersonService();
-            var detail = service.GetPersonById(id);
+           // var service = CreatePersonService();
+            var detail = _personService.GetPersonById(id);
             var model =
                 new PersonEdit
                 {
@@ -78,9 +77,9 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
                 return View(model);
             }
 
-            var service = CreatePersonService();
+            //var service = CreatePersonService();
 
-            if (service.UpdatePersone(model))
+            if (_personService.UpdatePersone(model))
             {
                 TempData["SaveResult"] = " Updated.";
                 return RedirectToAction("Index");
@@ -92,8 +91,8 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
         [ActionName("Delete")]
         public ActionResult Delete(int id)
         {
-            var svc = CreatePersonService();
-            var model = svc.GetPersonById(id);
+            //var svc = CreatePersonService();
+            var model = _personService.GetPersonById(id);
 
             return View(model);
         }
@@ -102,19 +101,19 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeletePost(int id)
         {
-            var service = CreatePersonService();
+           // var service = CreatePersonService();
 
-            service.DeletePerson(id);
+            _personService.DeletePerson(id);
 
             TempData["SaveResult"] = " Deleted";
 
             return RedirectToAction("Index");
         }
-        private PersonService CreatePersonService()
-        {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new PersonService(userId);
-            return service;
-        }
+        //private PersonService CreatePersonService()
+        //{
+        //    var userId = Guid.Parse(User.Identity.GetUserId());
+        //    var service = new PersonService(userId);
+        //    return service;
+        //}
     }
 }

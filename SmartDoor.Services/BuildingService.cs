@@ -13,10 +13,10 @@ namespace SmartDoor.Services
     public class BuildingService
     {
         private readonly Guid _guid;
-        public BuildingService(Guid guid)
-        {
-            _guid = guid;
-        }
+        //public BuildingService(Guid guid)
+        //{
+        //    _guid = guid;
+        //}
         public bool CreateBuilding(BuildingCreate model)
         {
             var entity =

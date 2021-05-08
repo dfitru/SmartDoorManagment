@@ -11,11 +11,11 @@ namespace SmartDoor.Services
 {
     public class PersonService
     {
-        private readonly Guid _userId;
-        public PersonService(Guid userId)
-        {
-            _userId = userId;
-        }
+        //private readonly Guid _userId;
+        //public PersonService(Guid userId)
+        //{
+        //    _userId = userId;
+        //}
 
 
         public bool CreatePerson (PersonCreate model)

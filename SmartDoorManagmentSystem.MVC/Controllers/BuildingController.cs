@@ -2,6 +2,7 @@
 using SmartDoor.Models;
 using SmartDoor.Models.Building;
 using SmartDoor.Services;
+using SmartDoorManagmentSystem.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +12,14 @@ using System.Web.Mvc;
 namespace SmartDoorManagmentSystem.MVC.Controllers
 {
     public class BuildingController : Controller
+
     {
+        private BuildingService _buildingService = new BuildingService();
+        //private ApplicationDbContext db = new ApplicationDbContext();
         // GET: Building
         public ActionResult Index()
         {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new BuildingService(userId);
-            var model = service.GetBuilding();
+            var model = new BuildingListItems[0];
             return View(model);
         }
         // Add method here 
@@ -31,8 +33,8 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
         public ActionResult Create(BuildingCreate model)
         {
             if (!ModelState.IsValid) return View(model);
-            var service = CreateBuildingService();
-            if (service.CreateBuilding(model))
+            //var service = CreateBuildingService();
+            if (_buildingService.CreateBuilding(model))
             {
                 TempData["SaveResult"] = "The Building was created.";
                 return RedirectToAction("Index");
@@ -44,15 +46,15 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
         //Get Details
         public ActionResult Details(int id)
         {
-            var svc = CreateBuildingService();
-            var model = svc.GetBuildingById(id);
+            //var svc = CreateBuildingService();
+            var model = _buildingService.GetBuildingById(id);
             return View(model);
         }
 
         public ActionResult Edit(int id)
         {
-            var service = CreateBuildingService();
-            var detail = service.GetBuildingById(id);
+            //var service = CreateBuildingService();
+            var detail = _buildingService.GetBuildingById(id);
             var model =
                 new BuildingEdit
                 {
@@ -73,9 +75,9 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
                 return View(model);
             }
 
-            var service = CreateBuildingService();
+           // var service = CreateBuildingService();
 
-            if (service.UpdateBuilding(model))
+            if (_buildingService.UpdateBuilding(model))
             {
                 TempData["SaveResult"] = " Updated.";
                 return RedirectToAction("Index");
@@ -84,11 +86,11 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
             ModelState.AddModelError("", " could not be updated.");
             return View(model);
         }
-        private BuildingService CreateBuildingService()
-        {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new BuildingService(userId);
-            return service;
-        }
+        //private BuildingService CreateBuildingService()
+        //{
+        //    var userId = Guid.Parse(User.Identity.GetUserId());
+        //    var service = new BuildingService(userId);
+        //    return service;
+        //}
     }
 }
