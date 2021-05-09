@@ -86,6 +86,8 @@ C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentS
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\SmartDoor.Models.dll.config
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\SmartDoor.Services.pdb
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\SmartDoor.Services.dll.config
+C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\EntityFramework.xml
+C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\EntityFramework.SqlServer.xml
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\System.Web.Helpers.xml
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\System.Web.Mvc.xml
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\System.Web.Optimization.xml
@@ -95,8 +97,6 @@ C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentS
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\System.Web.WebPages.Razor.xml
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\Newtonsoft.Json.xml
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\Antlr3.Runtime.pdb
-C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\EntityFramework.xml
-C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\EntityFramework.SqlServer.xml
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\ElevenfiftyProjects\RedBadge\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\SmartDoorManagmentSystem.MVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml

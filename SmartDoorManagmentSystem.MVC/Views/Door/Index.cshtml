@@ -1,0 +1,69 @@
+﻿@model IEnumerable<SmartDoor.Models.DoorItemList>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DoorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FloorNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsRoomInRoom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoorId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FloorNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsRoomInRoom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.DoorId  }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.DoorId  }) |
+            @*@@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+        </td>
+    </tr>
+}
+
+</table>

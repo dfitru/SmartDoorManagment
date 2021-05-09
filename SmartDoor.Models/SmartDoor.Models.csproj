@@ -54,11 +54,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Building\BuildingCreate.cs" />
+    <Compile Include="Building\BuildingDetail.cs" />
+    <Compile Include="Building\BuildingEdit.cs" />
+    <Compile Include="Building\BuildingListItems.cs" />
+    <Compile Include="Door\DoorDetail.cs" />
+    <Compile Include="Door\DoorCreate.cs" />
+    <Compile Include="Door\DoorEdit.cs" />
+    <Compile Include="Door\DoorItemList.cs" />
+    <Compile Include="Person\PersonCreate.cs" />
+    <Compile Include="Person\PersonDetail.cs" />
+    <Compile Include="Person\PersoneDelete.cs" />
+    <Compile Include="Person\PersonEdit.cs" />
+    <Compile Include="Person\PersonListItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmartKey\SmartKeyDetail.cs" />
+    <Compile Include="SmartKey\SmartKeyEdit.cs" />
+    <Compile Include="SmartKey\SmartKeyCreate.cs" />
+    <Compile Include="SmartKey\SmartKeyListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartDoor.Data\SmartDoor.Data.csproj">
+      <Project>{8d3e6b1b-c567-424c-9c67-7075ae0e087e}</Project>
+      <Name>SmartDoor.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
