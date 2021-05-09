@@ -10,9 +10,10 @@ using System.Threading.Tasks;
 
 namespace SmartDoor.Services
 {
+    
     public class BuildingService
     {
-        private readonly Guid _guid;
+        //private readonly Guid _guid;
         //public BuildingService(Guid guid)
         //{
         //    _guid = guid;

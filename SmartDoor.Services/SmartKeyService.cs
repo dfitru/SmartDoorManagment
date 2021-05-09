@@ -81,5 +81,38 @@ namespace SmartDoor.Services
                     };
             }
         }
+        public bool UpdateKey(SmartKeyEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .SmartKeys
+                        .Single(e => e.KeyId == model.KeyId && e.OwnerID== _userId);
+
+                entity.Name = model.Name;
+                entity.KeyRecived = model.KeyRecived;
+                entity.ModifiedDate = DateTimeOffset.UtcNow;
+                entity.PersonId = model.PersonId;
+                entity.DoorId = model.DoorId;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+        public bool DeleteNote(int Id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .SmartKeys
+                        .Single(e => e.KeyId == Id && e.OwnerID == _userId);
+
+                ctx.SmartKeys.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
     }
 }

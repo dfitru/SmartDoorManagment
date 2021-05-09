@@ -1,0 +1,50 @@
+﻿@model SmartDoor.Models.SmartKey.SmartKeyDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SmartKeyDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KeyId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KeyId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KeyRecived)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KeyRecived)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.KeyId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

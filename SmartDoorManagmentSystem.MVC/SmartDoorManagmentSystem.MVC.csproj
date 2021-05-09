@@ -257,6 +257,10 @@
     <Content Include="Views\Door\Details.cshtml" />
     <Content Include="Views\Door\Edit.cshtml" />
     <Content Include="Views\SmartKey\Index.cshtml" />
+    <Content Include="Views\SmartKey\Create.cshtml" />
+    <Content Include="Views\SmartKey\Details.cshtml" />
+    <Content Include="Views\SmartKey\Edit.cshtml" />
+    <Content Include="Views\SmartKey\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

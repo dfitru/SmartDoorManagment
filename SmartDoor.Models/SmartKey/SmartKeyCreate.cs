@@ -16,9 +16,7 @@ namespace SmartDoor.Models
         [MaxLength(10, ErrorMessage = "There are too many characters in this field.")]
         public string Name { get; set; }
         [Required]
-        public DateTimeOffset CreateDate { get; set; }
         public bool KeyRecived { get; set; }
-        public int? KeyOwnerId { get; set; }
         public int? DoorId { get; set; }
         public int? PersonId { get; set; }
 

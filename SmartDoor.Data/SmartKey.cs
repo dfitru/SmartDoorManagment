@@ -29,7 +29,7 @@ namespace SmartDoor.Data
         [ForeignKey(nameof(Person))]
         public int? PersonId { get; set; }
         public virtual Person Person { get; set; }
-        [ForeignKey(nameof(SmartDoor))]
+        [ForeignKey(nameof(Door))]
         public int? DoorId { get; set; }
         public virtual Door Door { get; set; }
     }
