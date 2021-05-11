@@ -67,7 +67,7 @@ namespace SmartDoor.Services
                         FloorNumber=entity.FloorNumber,
                         IsRoomInRoom=entity.IsRoomInRoom,
                         Buildingss=new BuildingListItems() { BuildingId=entity.Building.BuildingId,BuildingName=entity.Building.BuildingName,Address=entity.Building.Address}
-                        //SmartKeys=new SmartKeyListItem() { }
+                       // SmartKeys=new SmartKeyListItem() {KeyId=entity.SmartKeys.KeyId}
                     };
                 }
                 return null;

@@ -59,7 +59,11 @@ namespace SmartDoorManagmentSystem.MVC.Controllers
             var model =
                 new SmartKeyEdit
                 {
-                    
+                    KeyId=detail.KeyId,
+                    Name=detail.Name,
+                    KeyRecived=detail.KeyRecived,
+                    DoorId=detail.Doors.DoorId,
+                    PersonId = detail.Persons.PersonId
                 };
             return View(model);
         }

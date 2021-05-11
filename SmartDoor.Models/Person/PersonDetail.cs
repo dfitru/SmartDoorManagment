@@ -29,8 +29,8 @@ namespace SmartDoor.Models
         }
         [Required]
         public string Company { get; set; }
-        // public virtual SmartKey SmartKeys { get; set; }
-       // public ICollection<SmartKey> SmartKeys { get; set; }
+        //public virtual SmartKey SmartKeys { get; set; }
+        public ICollection<SmartKeyListItem> SmartKeys { get; set; }
 
     }
 }

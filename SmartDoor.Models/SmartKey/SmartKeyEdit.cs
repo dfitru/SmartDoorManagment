@@ -17,7 +17,6 @@ namespace SmartDoor.Models.SmartKey
         public string Name { get; set; }
         [Required]
         public bool KeyRecived { get; set; }
-        public int? KeyOwnerId { get; set; }
         public int? DoorId { get; set; }
         public int? PersonId { get; set; }
     }

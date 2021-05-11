@@ -11,9 +11,10 @@ namespace SmartDoor.Models.SmartKey
         public int KeyId { get; set; }
         public string Name { get; set; }
         public bool KeyRecived { get; set; }
+        
         public DateTimeOffset CreateDate { get; set; }
 
-        public virtual IEnumerable<PersonListItem> Persons { get; set; }
-        public virtual IEnumerable<DoorItemList> Doors { get; set; }
+        public virtual PersonListItem Persons { get; set; }
+        public virtual DoorItemList Doors { get; set; }
     }
 }
