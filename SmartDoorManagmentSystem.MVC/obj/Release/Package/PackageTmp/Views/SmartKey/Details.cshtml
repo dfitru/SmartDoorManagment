@@ -1,0 +1,100 @@
+﻿@model SmartDoor.Models.SmartKey.SmartKeyDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SmartKeyDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KeyId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KeyId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KeyRecived)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KeyRecived)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Doors.DoorId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doors.DoorId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Doors.DoorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doors.DoorName)
+
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Persons.PersonId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Persons.PersonId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Persons.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Persons.FullName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Doors.BuildingId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doors.BuildingId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Doors.BuildingName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doors.BuildingName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Doors.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doors.Address)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.KeyId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

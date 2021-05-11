@@ -57,17 +57,9 @@
     <Compile Include="Building.cs" />
     <Compile Include="Door.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202105042341517_InitialCreate.cs" />
-    <Compile Include="Migrations\202105042341517_InitialCreate.Designer.cs">
-      <DependentUpon>202105042341517_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105081119276_FirstMigration.cs" />
-    <Compile Include="Migrations\202105081119276_FirstMigration.Designer.cs">
-      <DependentUpon>202105081119276_FirstMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105090023370_MySecondMigration.cs" />
-    <Compile Include="Migrations\202105090023370_MySecondMigration.Designer.cs">
-      <DependentUpon>202105090023370_MySecondMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202105112238431_initialMigration.cs" />
+    <Compile Include="Migrations\202105112238431_initialMigration.Designer.cs">
+      <DependentUpon>202105112238431_initialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Person.cs" />
@@ -79,14 +71,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202105042341517_InitialCreate.resx">
-      <DependentUpon>202105042341517_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105081119276_FirstMigration.resx">
-      <DependentUpon>202105081119276_FirstMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105090023370_MySecondMigration.resx">
-      <DependentUpon>202105090023370_MySecondMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105112238431_initialMigration.resx">
+      <DependentUpon>202105112238431_initialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
