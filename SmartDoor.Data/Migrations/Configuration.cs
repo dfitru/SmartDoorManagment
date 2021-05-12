@@ -10,6 +10,7 @@ namespace SmartDoor.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "SmartDoorManagmentSystem.MVC.Models.ApplicationDbContext";
         }
 
         protected override void Seed(SmartDoorManagmentSystem.MVC.Models.ApplicationDbContext context)
